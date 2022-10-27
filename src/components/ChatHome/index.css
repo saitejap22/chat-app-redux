@@ -1,0 +1,172 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+.main-div {
+  background-color: #075e54;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  .main-div {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+}
+.inner-div {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .inner-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.left-div {
+  background-color: white;
+  width: 20%;
+  height: 90vh;
+  padding-left: 10px;
+}
+@media screen and (max-width: 600px) {
+  .left-div {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.right-div {
+  background-color: #ece5dd;
+  height: 90vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .right-div {
+    width: 100%;
+  }
+}
+.user-icon {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+.head-we {
+  color: #075e54;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  .head-we {
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .user-icon {
+    margin-top: 0;
+  }
+}
+
+.fixed-msg {
+  display: flex;
+  align-items: center;
+  background-color: #90909057;
+  height: 90px;
+  width: 100%;
+}
+.input {
+  width: 90%;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-radius: 8px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+.footer-head {
+  color: #a4dfea;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+@media screen and (min-width: 700px) {
+  .footer-head {
+    font-size: 40px;
+  }
+}
+.send-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.reply-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  list-style: none;
+  overflow-y: scroll;
+  align-items: flex-start;
+}
+.reply-msg {
+  padding: 8px;
+  font-weight: 500;
+  color: white;
+  background-color: #35897e;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.reply-time {
+  font-size: 10px;
+  color: rgb(250, 244, 244);
+  font-weight: 600;
+  text-align: left;
+}
+.reply-date {
+  text-align: center;
+  background-color: wheat;
+  padding: 5px;
+  color: #323f4b;
+  font-weight: 600;
+}
+.avatar {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+@media screen and (min-width: 600px) {
+  .avatar {
+    margin-top: 20px;
+  }
+}
